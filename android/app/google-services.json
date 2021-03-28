@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "643200258525",
+    "firebase_url": "https://terratravelapp-cccf8.firebaseio.com",
+    "project_id": "terratravelapp-cccf8",
+    "storage_bucket": "terratravelapp-cccf8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:643200258525:android:ef0cb8dd539505f7bb6634",
+        "android_client_info": {
+          "package_name": "co.com.terratravelapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "643200258525-porgr93gj2hga4fbliotjdv244oduada.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "co.com.terratravelapp",
+            "certificate_hash": "561dd739d8fc5ba3b4fd776e60c9c4e4646298d9"
+          }
+        },
+        {
+          "client_id": "643200258525-37ts13bkh61unc1pt0htepl0vs34pejm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSLUtWEJY_5EQpGgQ8Eto1CcVwTDfaBuA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "643200258525-37ts13bkh61unc1pt0htepl0vs34pejm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
