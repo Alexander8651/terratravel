@@ -16,11 +16,11 @@ class QuienesSomos extends StatelessWidget {
                 children: [
                   Text("Nuestra Misión",
                       textAlign: TextAlign.center,
-                      style: TextStyle(fontSize: 30, color: Colors.white)),
+                      style: TextStyle(fontSize: 30, color: Colors.black)),
                   Text(
                     "Promover el bienestar, el descanso y la armonía personal de nuestros viajeros, a través de nuevas experiencias turísticas, potencializando la conservación de nuestro patrimonio cultural y ecológico, dinamizando la economía de las pequeñas y medianas empresas, a través de un desarrollo turístico sostenible. Basados en principios de lealtad, responsabilidad, cumplimiento, dedicación y seriedad en nuestro grupo empresarial Terratravel.com",
                     textAlign: TextAlign.center,
-                    style: TextStyle(fontSize: 20, color: Colors.white),
+                    style: TextStyle(fontSize: 20, color: Colors.black),
                   )
                 ],
               )),
@@ -48,7 +48,7 @@ class QuienesSomos extends StatelessWidget {
                 children: [
                   Text("Politicas de privacidad",
                       textAlign: TextAlign.center,
-                      style: TextStyle(fontSize: 30, color: Colors.white)),
+                      style: TextStyle(fontSize: 30, color: Colors.black)),
 
                   Text(
                     """CÓDIGO DE CONDUCTA (LEY 1336 DE 2009)
@@ -101,7 +101,7 @@ la explotación y el abuso sexual de menores de edad en el país son sancionados
 administrativamente, conforme a las leyes vigentes.”
 Nombre del establecimiento: Agencia de Viajes TERRA TRAVEL.COM S.A.S""",
                     textAlign: TextAlign.center,
-                    style: TextStyle(fontSize: 20, color: Colors.white),
+                    style: TextStyle(fontSize: 20, color: Colors.black),
                   )
                 ],
               )),

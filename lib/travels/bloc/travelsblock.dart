@@ -25,8 +25,13 @@ class TravelsBloc implements Bloc{
   Stream<QuerySnapshot> travelQuineaneraListStream =  FirebaseFirestore.instance.collection(CloudFirestoreApi().QUINCEANERAS).snapshots();
   Stream<QuerySnapshot> get quinceaneraStream => travelQuineaneraListStream;
 
+  //Obtines los lastarjetas del hotel
+  Stream<QuerySnapshot> travelHotelListStream =  FirebaseFirestore.instance.collection(CloudFirestoreApi().HOTEL).snapshots();
+  Stream<QuerySnapshot> get hotelStream => travelHotelListStream;
+
   //Obtiene los travels construidos
   List<CardTravel> buildTravel(List<DocumentSnapshot> travelsListSnapshot) => _cloudFirestoreRepository.buildTravel(travelsListSnapshot);
+
 
   @override
   void dispose() {

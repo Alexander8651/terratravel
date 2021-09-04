@@ -8,13 +8,14 @@ class CloudFirestoreApi {
   final String NACIONALES = "nacionales";
   final String INTERNACIONALES = "internacionales";
   final String QUINCEANERAS = "quinceaneras";
+  final String HOTEL = "hotel";
 
   final FirebaseFirestore _db = FirebaseFirestore.instance;
 
   //procesa los datos de firesbase
   List<CardTravel> buildTravel(List<DocumentSnapshot> travelsListSnapshot) {
 
-    List<CardTravel> travels = List<CardTravel>();
+    List<CardTravel> travels = <CardTravel>[];
 
     travelsListSnapshot.forEach((element) {
       travels.add(CardTravel(travel: Travel(photo: element.data()['photo'],

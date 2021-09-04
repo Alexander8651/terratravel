@@ -136,3 +136,35 @@ class QuinceanerasList extends StatelessWidget{
     );
   }
 }
+class HotelList extends StatelessWidget{
+  TravelsBloc travelBloc;
+  @override
+  Widget build(BuildContext context) {
+    travelBloc = BlocProvider.of<TravelsBloc>(context);
+    return Container(
+      child: StreamBuilder(
+        stream: travelBloc.hotelStream,
+        builder: (context, AsyncSnapshot snapshot){
+          switch(snapshot.connectionState){
+            case ConnectionState.waiting:
+              return CircularProgressIndicator();
+            case ConnectionState.done:
+              return Column(
+                children:travelBloc.buildTravel(snapshot.data.documents),
+              );
+            case ConnectionState.active:
+              return Column(
+                children:travelBloc.buildTravel(snapshot.data.documents),
+              );
+            case ConnectionState.none:
+              return CircularProgressIndicator();
+            default:
+              return Column(
+                children:travelBloc.buildTravel(snapshot.data.documents),
+              );
+          }
+        },
+      ),
+    );
+  }
+}

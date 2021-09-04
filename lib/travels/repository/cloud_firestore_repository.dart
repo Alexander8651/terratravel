@@ -7,6 +7,5 @@ class CloudFirestoreRepository{
 
   final _cloudFirestoreAPI = CloudFirestoreApi();
 
-
   List<CardTravel> buildTravel(List<DocumentSnapshot> travelsListSnapshot) => _cloudFirestoreAPI.buildTravel(travelsListSnapshot);
 }

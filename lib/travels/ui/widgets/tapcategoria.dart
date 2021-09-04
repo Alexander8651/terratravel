@@ -36,6 +36,7 @@ class TapCategoria extends StatelessWidget {
                            categoria,
                            textAlign: TextAlign.center,
                            style: TextStyle(
+                             color: Colors.black,
                                fontSize: 15, fontWeight: FontWeight.bold),
                          ),
                        )

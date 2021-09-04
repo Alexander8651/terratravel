@@ -13,11 +13,11 @@ class BackgrowndAllScreens extends StatelessWidget {
     double screenWidth = MediaQuery.of(context).size.width;
 
 
-
-
     return Container(
+      color: Colors.white,
       height: screenHeight,
       width: screenWidth ,
+      /*
       decoration: BoxDecoration(
           gradient: LinearGradient(
               colors: [
@@ -30,8 +30,9 @@ class BackgrowndAllScreens extends StatelessWidget {
               tileMode: TileMode.clamp
           )
       ),
+       */
 
-      alignment: Alignment(-0.9, -0.6),
+      //alignment: Alignment(-0.9, -0.6),
 
         /*
         child: Container(
