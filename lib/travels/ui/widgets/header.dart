@@ -13,9 +13,6 @@ class Header extends StatefulWidget {
 class _HeaderState extends State<Header> {
   @override
   Widget build(BuildContext context) {
-
-
-
     return   Row(
       children: [
         Container(
@@ -26,7 +23,7 @@ class _HeaderState extends State<Header> {
             child: IconButton(
               icon: Icon(
                 Icons.keyboard_arrow_left,
-                color: Colors.white,
+                color: Colors.black,
                 size: 60,
               ),
               onPressed: () {
@@ -40,8 +37,8 @@ class _HeaderState extends State<Header> {
               padding: EdgeInsets.only(top: 45.0, left: 20.0, right: 10.0),
               child: Text("${widget.title}",
                 style: TextStyle(
-                    fontSize: 40.0,
-                    color: Colors.white,
+                    fontSize: 35.0,
+                    color: Colors.black,
                     fontWeight: FontWeight.bold
                 ),
               ),

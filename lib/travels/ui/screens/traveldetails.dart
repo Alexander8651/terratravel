@@ -47,8 +47,8 @@ class _TravelDetailsState extends State<TravelDetails> {
               Column(
                 children: [
                   Container(
-                    padding: EdgeInsets.all(5),
-                    child: Text(widget.travel.descripcion,style: TextStyle(color: Colors.white,fontSize: 30),),
+                    padding: EdgeInsets.all(10),
+                    child: Text(widget.travel.descripcion,style: TextStyle(color: Colors.black,fontSize: 30),),
                   )
                 ]
               )

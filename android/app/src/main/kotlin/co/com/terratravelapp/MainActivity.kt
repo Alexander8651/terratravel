@@ -12,6 +12,6 @@ class MainActivity: FlutterActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        this.window.statusBarColor = Color.TRANSPARENT
+        this.window.statusBarColor = Color.RED
     }
 }

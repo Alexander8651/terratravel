@@ -23,7 +23,6 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
   String _hotelPath = "assets/iconos/hotel.png";
   String _letraPath = "assets/logo/letra.png";
 
-
   void handleClick(String value) {
     switch (value) {
       case 'Quienes somos':
@@ -39,13 +38,11 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
 
   @override
   Widget build(BuildContext context) {
-
-    var margenTop = MediaQuery.of(context).size.height* 0.2;
-    var tamanoLetra = MediaQuery.of(context).size.height* 0.04;
-    var margenTopTitulo = MediaQuery.of(context).size.height* 0.05;
+    var margenTop = MediaQuery.of(context).size.height * 0.2;
+    var tamanoLetra = MediaQuery.of(context).size.height * 0.04;
+    var margenTopTitulo = MediaQuery.of(context).size.height * 0.05;
     var width = MediaQuery.of(context).size.width;
     var height = MediaQuery.of(context).size.height;
-
 
     return Scaffold(
         body: Stack(
@@ -60,15 +57,13 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
                 height: height * 0.06,
                 decoration: BoxDecoration(
                     image: DecorationImage(
-                        fit: BoxFit.cover,
-                        image: AssetImage(_letraPath))
-                ),
+                        fit: BoxFit.cover, image: AssetImage(_letraPath))),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Container(
-                    margin:EdgeInsets.only(top: 15),
+                    margin: EdgeInsets.only(top: 15),
                     child: Text(
                       'Bienvenido ',
                       style: TextStyle(
@@ -105,14 +100,41 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
               length: 5,
               child: Column(
                 children: [
-                  TabBar(isScrollable: true, tabs: [
-                    TapCategoria(width: 80.0, image: _regionalPath, categoria: "Regionales",heighIcon: 80,),
-                    TapCategoria(width: 80.0, image: _nacionalPath, categoria: "Nacionales", heighIcon: 66,),
-                    TapCategoria(width: 105.0, image: _worlPath, categoria: "Internacionales", heighIcon: 66,),
-                    TapCategoria(width: 105.0, image: _quinceaneraPath, categoria: "Quinceañeras", heighIcon: 70,),
-                    TapCategoria(width: 105.0, image: _hotelPath, categoria: "Hotel Virrey", heighIcon: 65,),
-                  ]),
-
+                  TabBar(
+                    isScrollable: true,
+                    tabs: [
+                      TapCategoria(
+                        width: 80.0,
+                        image: _regionalPath,
+                        categoria: "Regionales",
+                        heighIcon: 80,
+                      ),
+                      TapCategoria(
+                        width: 80.0,
+                        image: _nacionalPath,
+                        categoria: "Nacionales",
+                        heighIcon: 66,
+                      ),
+                      TapCategoria(
+                        width: 105.0,
+                        image: _worlPath,
+                        categoria: "Internacionales",
+                        heighIcon: 66,
+                      ),
+                      TapCategoria(
+                        width: 105.0,
+                        image: _quinceaneraPath,
+                        categoria: "Quinceañeras",
+                        heighIcon: 70,
+                      ),
+                      TapCategoria(
+                        width: 105.0,
+                        image: _hotelPath,
+                        categoria: "Hotel Virrey",
+                        heighIcon: 65,
+                      ),
+                    ],
+                  ),
                   Flexible(
                     child: TabBarView(
                       children: [
@@ -125,8 +147,7 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
                     ),
                   )
                 ],
-              )
-          ),
+              )),
         )
       ],
     ));

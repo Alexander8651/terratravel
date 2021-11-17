@@ -27,7 +27,7 @@ class TapCategoria extends StatelessWidget {
                 ),
                Row(
                  children: [
-                   Flexible(
+                   Expanded(
                        child: Container(
                          margin: EdgeInsets.only(
                              top: 62
@@ -37,7 +37,7 @@ class TapCategoria extends StatelessWidget {
                            textAlign: TextAlign.center,
                            style: TextStyle(
                              color: Colors.black,
-                               fontSize: 15, fontWeight: FontWeight.bold),
+                               fontSize: 13, fontWeight: FontWeight.bold),
                          ),
                        )
                    )

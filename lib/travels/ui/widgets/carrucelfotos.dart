@@ -21,6 +21,7 @@ class CarrucelFotos extends StatelessWidget {
     if(tipo == 1){
       pantalla = Container(
         child: FadeInImage(
+          fit: BoxFit.fill,
           image: NetworkImage(card),
           placeholder: AssetImage("assets/logo/logoterratravel.png"),
         ),
@@ -65,7 +66,6 @@ class CarrucelFotos extends StatelessWidget {
                 ),
               ),
             );
-
           }
       );
     }).toList(),
@@ -73,6 +73,7 @@ class CarrucelFotos extends StatelessWidget {
             scrollDirection: Axis.horizontal,
             enableInfiniteScroll: false,
             initialPage: 1,
+            autoPlay: true,
             height: altura
         )
     );
